@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E8E122EF2C89BE2300CE077D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8E122EE2C89BE2300CE077D /* main.cpp */; };
+		E8E122F72C89BF4A00CE077D /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8E122F62C89BF4A00CE077D /* OpenGL.framework */; };
+		E8E123262C89C0AB00CE077D /* simple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8E123252C89C0AB00CE077D /* simple.cpp */; };
+		E8E123282C89C12F00CE077D /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8E123272C89C12F00CE077D /* GLUT.framework */; };
+		E8E1232A2C89C14400CE077D /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8E123292C89C14400CE077D /* GLKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +27,10 @@
 
 /* Begin PBXFileReference section */
 		E8E122EB2C89BE2300CE077D /* opengl_yt */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = opengl_yt; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8E122EE2C89BE2300CE077D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		E8E122F62C89BF4A00CE077D /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		E8E123252C89C0AB00CE077D /* simple.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = simple.cpp; sourceTree = "<group>"; };
+		E8E123272C89C12F00CE077D /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		E8E123292C89C14400CE077D /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +38,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8E1232A2C89C14400CE077D /* GLKit.framework in Frameworks */,
+				E8E123282C89C12F00CE077D /* GLUT.framework in Frameworks */,
+				E8E122F72C89BF4A00CE077D /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +52,7 @@
 			children = (
 				E8E122ED2C89BE2300CE077D /* opengl_yt */,
 				E8E122EC2C89BE2300CE077D /* Products */,
+				E8E122F52C89BF4A00CE077D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +67,19 @@
 		E8E122ED2C89BE2300CE077D /* opengl_yt */ = {
 			isa = PBXGroup;
 			children = (
-				E8E122EE2C89BE2300CE077D /* main.cpp */,
+				E8E123252C89C0AB00CE077D /* simple.cpp */,
 			);
 			path = opengl_yt;
+			sourceTree = "<group>";
+		};
+		E8E122F52C89BF4A00CE077D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8E123292C89C14400CE077D /* GLKit.framework */,
+				E8E123272C89C12F00CE077D /* GLUT.framework */,
+				E8E122F62C89BF4A00CE077D /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8E122EF2C89BE2300CE077D /* main.cpp in Sources */,
+				E8E123262C89C0AB00CE077D /* simple.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +265,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				GCC_NO_COMMON_BLOCKS = NO;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/L02_progs_exe/lib",
+				);
+				OTHER_CFLAGS = "-Wno-deprecated";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -253,6 +279,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				GCC_NO_COMMON_BLOCKS = NO;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/L02_progs_exe/lib",
+				);
+				OTHER_CFLAGS = "-Wno-deprecated";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
