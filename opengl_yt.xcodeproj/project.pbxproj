@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E8DC8D0E2C8AB98600D5FFC1 /* gasket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8DC8D0D2C8AB98600D5FFC1 /* gasket.cpp */; };
+		E8C046182C8AC4FA009C784D /* simple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8C046172C8AC4FA009C784D /* simple.cpp */; };
+		E8C0461A2C8AD42D009C784D /* gasket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8C046192C8AD42D009C784D /* gasket.cpp */; };
 		E8DC8D0F2C8ABB3A00D5FFC1 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8E122F62C89BF4A00CE077D /* OpenGL.framework */; };
 		E8DC8D102C8ABB4900D5FFC1 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8E123272C89C12F00CE077D /* GLUT.framework */; };
 /* End PBXBuildFile section */
@@ -25,7 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E8DC8D0D2C8AB98600D5FFC1 /* gasket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gasket.cpp; path = opengl_yt/gasket.cpp; sourceTree = SOURCE_ROOT; };
+		E8C046172C8AC4FA009C784D /* simple.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = simple.cpp; path = L02_progs_exe/simple.cpp; sourceTree = SOURCE_ROOT; };
+		E8C046192C8AD42D009C784D /* gasket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gasket.cpp; path = L02_progs_exe/gasket.cpp; sourceTree = SOURCE_ROOT; };
 		E8E122EB2C89BE2300CE077D /* opengl_yt */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = opengl_yt; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8E122F62C89BF4A00CE077D /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		E8E123272C89C12F00CE077D /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
@@ -65,7 +67,8 @@
 		E8E122ED2C89BE2300CE077D /* opengl_yt */ = {
 			isa = PBXGroup;
 			children = (
-				E8DC8D0D2C8AB98600D5FFC1 /* gasket.cpp */,
+				E8C046172C8AC4FA009C784D /* simple.cpp */,
+				E8C046192C8AD42D009C784D /* gasket.cpp */,
 			);
 			path = opengl_yt;
 			sourceTree = "<group>";
@@ -137,7 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8DC8D0E2C8AB98600D5FFC1 /* gasket.cpp in Sources */,
+				E8C0461A2C8AD42D009C784D /* gasket.cpp in Sources */,
+				E8C046182C8AC4FA009C784D /* simple.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

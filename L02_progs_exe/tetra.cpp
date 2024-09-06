@@ -6,11 +6,11 @@
 #include <stdio.h>
 #include <math.h>
 
-#ifdef __APPLE_
+// #ifdef __APPLE_
 #include <GLUT/glut.h>
-#else
-#include <GL/glut.h>
-#endif
+// #else
+// #include <GL/glut.h>
+// #endif
 
 typedef float point[3];
 
@@ -98,7 +98,7 @@ void myReshape(int w, int h)
 }
 
 
-void main(int argc, char **argv)
+int main(int argc, char **argv)
 {
     // n = atoi(argv[1]); /* or set number of subdivision steps here */
     n = 4; /* number of subdivision steps */
@@ -111,4 +111,6 @@ void main(int argc, char **argv)
 	glEnable(GL_DEPTH_TEST); 
     glClearColor (1.0, 1.0, 1.0, 1.0);
     glutMainLoop();
+
+    return 0;
 }

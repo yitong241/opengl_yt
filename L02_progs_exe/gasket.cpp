@@ -67,7 +67,7 @@ void display( void )
      glFlush(); /* clear buffers */
  }
 
-void main(int argc, char** argv)
+int test(int argc, char** argv)
 {
 
 /* Standard GLUT initialization */
@@ -82,5 +82,6 @@ void main(int argc, char** argv)
     myinit(); /* set attributes */
 
     glutMainLoop(); /* enter event loop */
+    return 0;
 }
 
